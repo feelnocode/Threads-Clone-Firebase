@@ -63,4 +63,3 @@ $ git clone https://github.com/feelnomo/Threads-Clone-Firebase.git
 Dependencies are installed using Swift Package Manager:
 - [Kingfisher](https://github.com/onevcat/Kingfisher) - for image downloading and caching.
 - [Firebase](https://firebase.google.com/) - for backend services such as authentication, database, and storage.
-

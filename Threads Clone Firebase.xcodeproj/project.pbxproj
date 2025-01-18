@@ -8,15 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		AF1FDE492D397BF400D6ABA6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AF1FDE482D397BF400D6ABA6 /* Kingfisher */; };
-		AF1FDF202D3BF67A00D6ABA6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AF1FDF1F2D3BF67A00D6ABA6 /* README.md */; };
+		AF8E701D2D3BFF7F0070A550 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = AF8E701C2D3BFF7F0070A550 /* demo.gif */; };
+		AF8E701F2D3BFFB30070A550 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AF8E701E2D3BFFB30070A550 /* README.md */; };
 		AFE6992C2D36CAF200C3E149 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AFE6992B2D36CAF200C3E149 /* FirebaseAuth */; };
 		AFE6992E2D36CAF200C3E149 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AFE6992D2D36CAF200C3E149 /* FirebaseFirestore */; };
 		AFE699302D36CAF200C3E149 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AFE6992F2D36CAF200C3E149 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AF1FDF1F2D3BF67A00D6ABA6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AF2344622D3567B000D8301D /* Threads Clone Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Threads Clone Firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF8E701C2D3BFF7F0070A550 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
+		AF8E701E2D3BFFB30070A550 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,7 +54,8 @@
 		AF2344592D3567B000D8301D = {
 			isa = PBXGroup;
 			children = (
-				AF1FDF1F2D3BF67A00D6ABA6 /* README.md */,
+				AF8E701E2D3BFFB30070A550 /* README.md */,
+				AF8E701B2D3BFF660070A550 /* demo */,
 				AF2344642D3567B000D8301D /* Threads Clone Firebase */,
 				AF00BA512D380CD10020608C /* Frameworks */,
 				AF2344632D3567B000D8301D /* Products */,
@@ -65,6 +68,14 @@
 				AF2344622D3567B000D8301D /* Threads Clone Firebase.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AF8E701B2D3BFF660070A550 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				AF8E701C2D3BFF7F0070A550 /* demo.gif */,
+			);
+			path = demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +150,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF1FDF202D3BF67A00D6ABA6 /* README.md in Resources */,
+				AF8E701D2D3BFF7F0070A550 /* demo.gif in Resources */,
+				AF8E701F2D3BFFB30070A550 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
