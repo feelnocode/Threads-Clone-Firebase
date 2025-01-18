@@ -33,7 +33,7 @@ A clone of the Threads application built using SwiftUI, Firebase, and MVVM archi
 ## Demo Video
 ### Application Demonstration
 
-<img src="https://github.com/feelnocode/Threads-Clone-Firebase/blob/e9af167ea31ffef11e2ef774a99771d4618d79ad/demo/demo.gif" alt="Demo">
+<img src="https://github.com/feelnocode/Threads-Clone-Firebase/blob/e9af167ea31ffef11e2ef774a99771d4618d79ad/demo/demo.gif" width="50%" height="50%" alt="Demo">
 
 ## Installation
 ### To run the Threads Clone on your local machine, follow these steps:
