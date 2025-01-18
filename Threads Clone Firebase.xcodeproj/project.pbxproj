@@ -6,7 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AF1FDE492D397BF400D6ABA6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AF1FDE482D397BF400D6ABA6 /* Kingfisher */; };
+		AF1FDF202D3BF67A00D6ABA6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AF1FDF1F2D3BF67A00D6ABA6 /* README.md */; };
+		AFE6992C2D36CAF200C3E149 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AFE6992B2D36CAF200C3E149 /* FirebaseAuth */; };
+		AFE6992E2D36CAF200C3E149 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AFE6992D2D36CAF200C3E149 /* FirebaseFirestore */; };
+		AFE699302D36CAF200C3E149 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AFE6992F2D36CAF200C3E149 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		AF1FDF1F2D3BF67A00D6ABA6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AF2344622D3567B000D8301D /* Threads Clone Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Threads Clone Firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -23,16 +32,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1FDE492D397BF400D6ABA6 /* Kingfisher in Frameworks */,
+				AFE6992C2D36CAF200C3E149 /* FirebaseAuth in Frameworks */,
+				AFE6992E2D36CAF200C3E149 /* FirebaseFirestore in Frameworks */,
+				AFE699302D36CAF200C3E149 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF00BA512D380CD10020608C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF2344592D3567B000D8301D = {
 			isa = PBXGroup;
 			children = (
+				AF1FDF1F2D3BF67A00D6ABA6 /* README.md */,
 				AF2344642D3567B000D8301D /* Threads Clone Firebase */,
+				AF00BA512D380CD10020608C /* Frameworks */,
 				AF2344632D3567B000D8301D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +87,10 @@
 			);
 			name = "Threads Clone Firebase";
 			packageProductDependencies = (
+				AFE6992B2D36CAF200C3E149 /* FirebaseAuth */,
+				AFE6992D2D36CAF200C3E149 /* FirebaseFirestore */,
+				AFE6992F2D36CAF200C3E149 /* FirebaseStorage */,
+				AF1FDE482D397BF400D6ABA6 /* Kingfisher */,
 			);
 			productName = "Threads Clone Firebase";
 			productReference = AF2344622D3567B000D8301D /* Threads Clone Firebase.app */;
@@ -94,6 +120,10 @@
 			);
 			mainGroup = AF2344592D3567B000D8301D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AFE6992A2D36CAF200C3E149 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AF1FDE472D397BF400D6ABA6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AF2344632D3567B000D8301D /* Products */;
 			projectDirPath = "";
@@ -109,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1FDF202D3BF67A00D6ABA6 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,11 +286,13 @@
 				DEVELOPMENT_TEAM = YU27T4KYTF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Threads;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -267,9 +300,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.feelnomo.Threads-Clone-Firebase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -284,11 +321,13 @@
 				DEVELOPMENT_TEAM = YU27T4KYTF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Threads;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,9 +335,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.feelnomo.Threads-Clone-Firebase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -324,6 +367,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF1FDE472D397BF400D6ABA6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.3;
+			};
+		};
+		AFE6992A2D36CAF200C3E149 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF1FDE482D397BF400D6ABA6 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF1FDE472D397BF400D6ABA6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		AFE6992B2D36CAF200C3E149 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFE6992A2D36CAF200C3E149 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AFE6992D2D36CAF200C3E149 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFE6992A2D36CAF200C3E149 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		AFE6992F2D36CAF200C3E149 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFE6992A2D36CAF200C3E149 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF23445A2D3567B000D8301D /* Project object */;
 }
